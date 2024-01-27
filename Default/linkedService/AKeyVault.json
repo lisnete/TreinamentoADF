@@ -1,0 +1,10 @@
+{
+	"name": "AKeyVault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://akvtreinamento.vault.azure.net/"
+		}
+	}
+}
