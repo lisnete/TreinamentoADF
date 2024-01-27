@@ -7,12 +7,10 @@
 		},
 		"parameters": {
 			"path": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "cttreinamento"
 			},
-			"dir": {
-				"type": "string"
-			},
-			"file": {
+			"directory": {
 				"type": "string"
 			}
 		},
@@ -21,12 +19,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().file",
-					"type": "Expression"
-				},
 				"folderPath": {
-					"value": "@dataset().dir",
+					"value": "@dataset().directory",
 					"type": "Expression"
 				},
 				"fileSystem": {
